@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário CJR</title>
+    <link rel = "stylesheet" href = "Formulário(css).css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div>
+            <img src="CJR LOGO.png" width = "70" height = "70">
+        </div>
+        <h1 id="formulario">
+            Formulário
+        </h1>
+        <h1>
+            +
+        </h1>
+    </div>
+    
+        <form>
+            <div id="text">
+                <div class="input-text">
+                    <label for = "name">Qual o seu nome completo?</label>
+                    <input type="text" id = "name"  required>
+                    
+                </div><br></br>
+            
+                <div class="input-text">
+                    <label for = "idade">Qual a sua idade?</label>
+                    <input type = "number" id = "idade" required>
+                    
+                </div><br></br>
+                <div class="input-text">
+                    <label for = "email">Digite seu email.</label>
+                    <input type = "email" id = "email" required>
+                </div><br></br>
+
+                <div class="input-text">
+                    <label for = "curso">Qual o seu curso?</label>
+                    <input list = "curso" required>
+                
+                    <datalist id = "curso">
+                    <option value = "Ciência da Computação">
+                    <option value = "Engenharia da Computação">
+                    <option value = "Computação(Licenciatura)">
+                </div><br></br>
+
+                <div class = "input-text">
+                    <label for = "tel">Qual o seu número de telefone?</label>
+                    <input type = "tel" id = "tel" required>
+                </div><br></br>
+        
+                <div id = "feedback">
+                    <label for = "feedback">Diga-nos sobre você.(Opcional)</label>
+                    <textarea name= "feedback" cols="30" rows="10" wrap="hard" spellcheck="true"
+                    placeholder="Digite aqui."></textarea>
+                </div><br></br>
+
+                </datalist>
+            </div>
+        </form>
+        <div id = "button">
+            <button>Enviar</button>
+        </div>
+    
+</body>
+</html>
